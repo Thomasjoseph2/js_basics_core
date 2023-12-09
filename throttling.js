@@ -27,7 +27,6 @@ const betterOne = function flagger(apicall, limit) {
     if (flag) {
       apicall();
       flag = false;
-      clearTimeout(timer);
       timer = setTimeout(() => {
         flag = true;
       }, limit);
@@ -37,7 +36,7 @@ const betterOne = function flagger(apicall, limit) {
 const betterThrottler = betterOne(apicall, 1000);
 
 window.addEventListener("resize", betterThrottler);
-
+ 
 //top one is better we are managing the this there  we can also do that in the second one also im not doing it now bcz im lazy  
 
 
