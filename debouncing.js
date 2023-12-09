@@ -9,7 +9,7 @@ const doSomeMagic = function (fn, delay) {
     args=arguments
     clearTimeout(timer)
     timer=setTimeout(()=>{
-     getData.apply(context,args)
+     fn.apply(context,args)
     },delay)
    
   };
