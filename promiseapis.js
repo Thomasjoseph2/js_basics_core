@@ -28,7 +28,7 @@ const p3 = new promise((resolve, reject) => {
 promise
   .all([p1, p2, p3])
   .then((res) => {
-    console.log(res);
+    console.log(res,'all');
   })
   .catch((err) => {
     console.error(err);

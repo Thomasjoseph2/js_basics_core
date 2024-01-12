@@ -15,4 +15,4 @@ const doSomeMagic = function (fn, delay) {
   };
 };
 
-const betterFunction = doSomeMagic(getData, 300);
+const betterFunction = doSomeMagic(getData, 1000);
