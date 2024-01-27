@@ -1,4 +1,3 @@
-const { curry } = require("lodash");
 
 class Node {
   constructor(value) {

@@ -7,10 +7,19 @@
   </head>
   <body>
     <button class="btn" id="btn" style="background-color: brown;">select with id</button>
-    <div class="nextelement">
+    <div class="nextelement" id="nextelement">
         <h1 class="H1">haai</h1>
         <h2 >hloo</h2>
     </div>
     <script src="./domnew.js"></script>
+    <script>
+    const div=document.createElement('div')
+
+    div.id='mydiv'
+    div.innerHTML='helloe';
+    const parent=document.getElementById('nextelement')
+
+    parent.appendChild(div)
+    </script>
   </body>
 </html>
