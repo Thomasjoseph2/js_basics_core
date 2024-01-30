@@ -1,5 +1,5 @@
 class Graph {
-  constructor(params) {
+  constructor() {
     this.adjacencyList = {};
   }
 
@@ -11,7 +11,7 @@ class Graph {
   addEdge(v1, v2) {
     if (!this.adjacencyList[v1]) this.addVertex(v1);
     if (!this.adjacencyList[v2]) this.addVertex(v2);
-    this.adjacencyList[v1].add(v2);
+    this.adjacencyList[ v1].add(v2);
     this.adjacencyList[v2].add(v1);
   }
 
@@ -36,17 +36,28 @@ class Graph {
       this.adjacencyList[vertex].delete(v);
     }
   }
+
+  dfsRecurssive(){
+    
+  }
 }
 
 const graph = new Graph();
 
-graph.addVertex("kply");
-graph.addVertex("pala");
-graph.addVertex("ktym");
-graph.addVertex("usa");
-graph.addEdge("usa", "ktym");
-graph.addEdge("kply", "pala");
-graph.addEdge("pala", "usa");
+graph.addVertex("A")
+graph.addVertex("B")
+graph.addVertex("C")
+graph.addVertex("D")
+graph.addVertex("E")
+graph.addVertex("F")
 
-graph.removeVertex("kply");
-graph.printList();
+graph.addEdge("A","B")
+graph.addEdge("A","C")
+graph.addEdge("B","D")
+graph.addEdge("C","E")
+graph.addEdge("D","E")
+graph.addEdge("D","F")
+graph.addEdge("E","F")
+
+
+graph.printList()

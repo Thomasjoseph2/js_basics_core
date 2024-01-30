@@ -209,10 +209,9 @@ bst.addNode(1);
 //bst.maxRec(bst.root);
 bst.delete(5)
 console.log('---------------');
-bst.bfsLevel()
 
 
 
-//console.log(bst.dfsPreorder(bst.root));
+console.log(bst.dfsPreorder(bst.root));
 //bst.dfspostOrder(bst.root);
 // console.log(bst.bfsLevel());

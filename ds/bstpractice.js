@@ -1,4 +1,3 @@
-const { result } = require("lodash");
 
 class Node {
   constructor(value) {

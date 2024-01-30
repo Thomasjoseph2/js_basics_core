@@ -8,6 +8,12 @@ const map = new Map([
     [2, 80],
     [3, 100],
   ]);
+  const map3=new Map()
+
+  
+
+  console.log(map3);
+ 
   
   function combine(mapA, mapB) {
     const result = new Map();

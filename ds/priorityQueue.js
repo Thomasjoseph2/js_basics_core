@@ -1,4 +1,3 @@
-const e = require("express");
 
 class Node {
   constructor(value, priority) {
